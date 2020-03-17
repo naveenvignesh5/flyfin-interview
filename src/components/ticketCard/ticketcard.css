@@ -1,0 +1,151 @@
+.ticket-card {
+  display: flex;
+  flex-direction: column;
+  /* color to be changed */
+  width: fit-content;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.18);
+}
+
+.ticket-card__body {
+  border-radius: 3px 3px 0px 0px;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.ticket-card__discount-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ticket-card__discount-title {
+  color: #333;
+  font-family: "Muli", sans-serif;
+  margin-right: 10px;
+}
+
+.money-icon {
+    color: green;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.info-icon {
+  cursor: pointer;
+}
+
+.ticket-card__divider {
+  background: #ccc;
+  width: 100%;
+}
+
+.ticket-card__price-wrapper {
+  /* display: flex;
+    flex-direction: column; */
+  text-align: left;
+  font-family: "Muli", sans-serif;
+  margin-top: 10px;
+}
+
+.ticket-card__price-label {
+  color: #999;
+}
+
+.ticket-card__price-value {
+  font-size: 28px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.ticket-card__dropdown {
+  position: relative;
+}
+.ticket-card__dropdown-select {
+  margin-top: 10px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.ticket-card__dropdown-input {
+  padding: 10px;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+}
+
+.ticket-card__dropdown-toggle {
+  background: #333;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #333;
+}
+
+.ticket-card__dropdown-calendar {
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  bottom: -120%;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  background: #ccc;
+}
+
+.ticket-card__button {
+  margin: 20px 0px;
+  background: linear-gradient(to right, purple, pink);
+  border-color: white;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-family: "Muli";
+  font-weight: bold;
+}
+
+.ticket-card__footer-text {
+  font-family: "Muli";
+  color: orange;
+  /* box-shadow: 0 1px 8px rgba(0, 0, 0, 0.18); */
+  border-radius: 0px 0px 3px 3px;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.ticket-card__footer-text-percent {
+  font-family: "Gochi Hand", cursive;
+  text-decoration: underline;
+  color: red;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.ticket-card__clipped-section {
+  display: flex;
+  height: 55px;
+  /* box-shadow: 0 1px 8px rgba(0, 0, 0, 0.18); */
+}
+
+.ticket-card__clipped-left {
+  margin-left: -34px;
+  left: 0;
+  border-radius: 100%;
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(90deg, #fff 43%, #efefef);
+}
+
+.ticket-card__clipped-right {
+  margin-right: -34px;
+  right: 0;
+  border-radius: 100%;
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(270deg, #fff 43%, #efefef);
+}
+
+.ticket-card__clipped-dot-line {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: large;
+  color: #bababa;
+  width: 100%;
+}
