@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Muli&display=swap');
 
 .App {
-  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.row {
   display: flex;
-  padding: 100px;
-  align-items: center;
-  justify-content: center;
+  flex: 1;
+}
+
+.title {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  padding: 20px;
 }

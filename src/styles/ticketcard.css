@@ -9,7 +9,6 @@
 .ticket-card__body {
   border-radius: 3px 3px 0px 0px;
   padding: 20px;
-  padding-bottom: 0px;
 }
 
 .ticket-card__discount-wrapper {
@@ -59,6 +58,16 @@
 .ticket-card__dropdown {
   position: relative;
 }
+
+.ticket-card__dropdown-list {
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  z-index: 10;
+  background: white;
+  border: 1px solid black;
+}
+
 .ticket-card__dropdown-select {
   margin-top: 10px;
   display: inline-flex;

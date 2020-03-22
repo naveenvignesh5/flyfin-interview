@@ -1,13 +1,45 @@
-import React from "react";
-import "./App.css";
-import TicketCard from "./components/ticketCard/TicketCard";
+import React, { useEffect } from "react";
 
-function App() {
+import { Provider, useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
+
+// import TicketCard from "./components/ticketCard/TicketCard";
+import ConfigCard from "./components/ConfigCard/ConfigCard";
+
+import { get_currency_base } from "./redux/actions/action-currency";
+
+import store from "./redux/store";
+
+import "./lib/i18n";
+import "./App.css";
+
+const App = () => {
+  // const { rates, base } = useSelector(state => state.currency);
+
+  const { t } = useTranslation();
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(get_currency_base());
+  }, [dispatch]);
+
   return (
     <div className="App">
-      <TicketCard />
+      <h1 className="title">{t('test')}</h1>
+      <div className="row">
+        <ConfigCard />
+      </div>
     </div>
+  );
+};
+
+function AppWithStore() {
+  return (
+    <Provider store={store}>
+      <App />
+    </Provider>
   );
 }
 
-export default App;
+export default AppWithStore;
