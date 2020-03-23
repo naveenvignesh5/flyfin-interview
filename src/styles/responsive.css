@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) {
+  .ticket-card {
+    width: 100%;
+  }
+
+  .ticket-card__body {
+    flex-direction: column;
+  }
+
+  .ticket-card__body .title {
+    margin: 20px 0px;
+    text-align: left;
+  }
+
+  .grid {
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+  }
+}

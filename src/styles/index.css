@@ -1,2 +1,28 @@
-@import './responsive.css';
-@import './ticketcard.css';
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand|Muli&display=swap");
+
+@import "./responsive.css";
+@import "./ticketcard.css";
+@import "./ratecard.css";
+
+.App {
+  padding: 3rem 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Muli", sans-serif;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 40px;
+}

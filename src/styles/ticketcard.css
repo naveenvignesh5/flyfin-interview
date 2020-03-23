@@ -9,6 +9,11 @@
 .ticket-card__body {
   border-radius: 3px 3px 0px 0px;
   padding: 20px;
+  display: flex;
+}
+
+.ticket-card__body .title {
+  margin: auto 30px;
 }
 
 .ticket-card__discount-wrapper {
@@ -62,14 +67,19 @@
 .ticket-card__dropdown-list {
   position: absolute;
   padding: 10px;
-  width: 100%;
+  width: 50%;
+  padding: 10px 20px;
   z-index: 10;
   background: white;
   border: 1px solid black;
 }
 
+.ticket-card__dropdown-item {
+  cursor: pointer;
+  font-family: 'Muli', sans-serif;
+}
+
 .ticket-card__dropdown-select {
-  margin-top: 10px;
   display: inline-flex;
   width: 100%;
 }
@@ -78,6 +88,8 @@
   padding: 10px;
   font-family: "Muli", sans-serif;
   font-size: 16px;
+  width: 100%;
+  border: 1px solid #333;
 }
 
 .ticket-card__dropdown-toggle {

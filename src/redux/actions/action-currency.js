@@ -16,6 +16,17 @@ const fetchCurrecyFailure = err => ({
   error: err.response.data.message
 });
 
+const setCurrecy = currency => ({
+  type: actionTypes.SET_CURRENCY,
+  payload: {
+    currency
+  }
+});
+
+export const select_currency = currency => dispatch => {
+  dispatch(setCurrecy(currency));
+};
+
 export const get_currency_base = () => async dispatch => {
   try {
     dispatch(fetchCurrencyRequest());

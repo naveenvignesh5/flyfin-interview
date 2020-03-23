@@ -11,7 +11,8 @@ import { get_currency_base } from "./redux/actions/action-currency";
 import store from "./redux/store";
 
 import "./lib/i18n";
-import "./App.css";
+import "./styles/index.css";
+import RateCard from "./components/RateCard/RateCard";
 
 const App = () => {
   // const { rates, base } = useSelector(state => state.currency);
@@ -26,9 +27,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="title">{t('test')}</h1>
-      <div className="row">
+      <h1 className="title">{t("title")}</h1>
+      <div className="container">
         <ConfigCard />
+      </div>
+      <br />
+      <div className="grid">
+        <RateCard index={0} listing={{ price: 100 }} />
+        <RateCard index={1} listing={{ price: 200 }} />
+        <RateCard index={2} listing={{ price: 350 }} />
       </div>
     </div>
   );

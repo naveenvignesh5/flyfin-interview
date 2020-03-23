@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const DropdownInput = props => {
   const { items, onItemSelect, ...inputProps } = props;
   const [dropdownVisible, toggleDropdown] = useState(false);
-  const [selectedItem, updateSelectedItem] = useState("");
+  const [selectedItem, updateSelectedItem] = useState(props.defaultItem || "");
   const handleOnItemSelect = item => {
     updateSelectedItem(item);
     toggleDropdown(false);

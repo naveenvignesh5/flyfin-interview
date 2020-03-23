@@ -1,3 +1,17 @@
 {
-    "test": "test text"
+  "title": "Flyfin Interview",
+  "ratecard": [
+    {
+      "name": "house",
+      "about": "This house is a comfortable house"
+    },
+    {
+      "name": "bungalow",
+      "about": "Bungalow with inbuild swimming pool"
+    },
+    {
+      "name": "cottage",
+      "about": "A homely cottage with all the basic amenties"
+    }
+  ]
 }
