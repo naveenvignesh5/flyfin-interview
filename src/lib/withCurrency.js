@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 const withCurrency = Component => props => {
   const { currency, rates } = useSelector(state => state.currency);
   const curr = val => {
-    if (isNaN(val)) return 0;
+    if (isNaN(val) || !currency) return 0;
     
     let _val = Number(val);
 
